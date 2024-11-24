@@ -36,7 +36,7 @@ Kaggle page https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-d
     - 0.0.0.0:9696 url
     - raw JSON
 
-![alt text]("how to use.png")
+![alt text]("how-to-use.png")
 
 Here a input example to copy:
 
