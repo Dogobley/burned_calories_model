@@ -26,3 +26,31 @@ Loss-weight is a recurrent reason for train at gym. Excluding the diet, calories
 
 Data set on https://www.kaggle.com/api/v1/datasets/download/valakhorasani/gym-members-exercise-dataset
 Kaggle page https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset?select=gym_members_exercise_tracking.csv
+
+#### How to use
+
+1. run: docker build -t burned_c_prediction .
+2. run: docker run -it -p 9696:9696 burned_c_prediction:latest
+3. Send a request as the following image
+    - POST request
+    - 0.0.0.0:9696 url
+    - raw JSON
+
+![alt text]("how to use.png")
+
+Here a input example to copy:
+
+{"age": 35,
+ "gender": "Female",
+ "weight_(kg)": 102.5,
+ "height_(m)": 1.94,
+ "max_bpm": 183,
+ "avg_bpm": 158,
+ "resting_bpm": 64,
+ "session_duration_(hours)": 0.84,
+ "workout_type": "Cardio",
+ "fat_percentage": 21.1,
+ "water_intake_(liters)": 2.4,
+ "workout_frequency_(days/week)": 2,
+ "experience_level": 1,
+ "bmi": 27.23}
